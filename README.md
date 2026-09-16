@@ -2,44 +2,27 @@
 
 A practical CCNA networking study repository containing concepts, Cisco commands, configurations, troubleshooting notes, and Packet Tracer labs.
 
-## 📚 Topics Covered
+## 📚 Table of Contents
 
-- Routing
-  - Static Routing
-  - RIP
-  - OSPF
-  - EIGRP
-
-- Switching
-  - VLANs
-  - Trunking
-  - STP
-  - EtherChannel
-
-- Network Services
-  - DHCP
-  - DNS
-  - NAT
-
-- Network Security
-  - ACL
-  - Telnet
-  - Basic Security Concepts
-
-- IPv6
-  - IPv6 Addressing
-  - Routing
-  - Configuration
-
-- High Availability
-  - FHRP
-  - HSRP
-
-- Troubleshooting
-  - Connectivity Testing
-  - Routing Issues
-  - VLAN and Trunk Issues
-  - Common Cisco IOS Troubleshooting Commands
+| # | Topic |
+|---|---|
+| 01 | [Router Configuration](./01.%20Router%20Configuration) |
+| 02 | [Static Routing](./02.%20Static%20Routing) |
+| 03 | [Static Routing to ISP](./03.%20Static%20Routing%20to%20ISP) |
+| 04 | [DNS and DHCP](./04.%20DNS%20and%20DHCP) |
+| 05 | [Router Security and Telnet](./05.%20Router%20Security%20and%20Telnet) |
+| 06 | [Loopback Interface](./06.%20Loopback%20Interface) |
+| 07 | [RIP](./07.%20RIP) |
+| 08 | [OSPF](./08.%20OSPF) |
+| 09 | [Best Path Calculation](./09.%20Best%20Path%20Calculation) |
+| 10 | [Convergence](./10.%20Convergence) |
+| 11 | [EIGRP](./11.%20EIGRP) |
+| 12 | [ACL](./12.%20ACL) |
+| 13 | [NAT](./13.%20NAT) |
+| 14 | [FHRP](./14.%20FHRP) |
+| 15 | [IPv6](./15.%20IPV6) |
+| 16 | [Switching](./16.%20Switching) |
+| 17 | [STP](./17.%20STP) |
 
 ## 🛠️ What's Inside
 
@@ -49,18 +32,20 @@ A practical CCNA networking study repository containing concepts, Cisco commands
 - Screenshots and diagrams
 - Cisco Packet Tracer labs
 - Practical networking exercises
+- Troubleshooting scenarios
 
 ## 🚀 How to Use
 
-1. Browse the repository and choose the topic you want to study.
-2. Review the explanation and Cisco commands.
-3. Open the related Packet Tracer lab when available.
+1. Choose a networking topic from the table above.
+2. Review the available notes and configurations.
+3. Open the related Packet Tracer lab.
 4. Rebuild the topology yourself.
-5. Test the configuration and troubleshoot any issues.
+5. Test the configuration.
+6. Practice troubleshooting.
 
 ## 🎯 Goal
 
-The goal of this repository is to provide a practical reference for learning and reviewing CCNA-level networking concepts through a combination of theory, Cisco IOS configuration, and hands-on Packet Tracer practice.
+The goal of this repository is to provide a practical reference for learning and reviewing CCNA-level networking concepts through theory, Cisco IOS configuration, and hands-on Packet Tracer practice.
 
 ## 🤝 Contributions
 
