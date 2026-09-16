@@ -76,8 +76,8 @@ Suggestions, corrections, and additional lab scenarios are welcome.
 
 Junior Network Engineer | IT Support | Cybersecurity | Automation
 
-- GitHub: @sabry2012
-- LinkedIn: sabry-gomaa-b2306923a
+- GitHub: [@sabry2012](https://github.com/sabry2012)
+- LinkedIn: [Sabry Gomaa](https://www.linkedin.com/in/sabry-gomaa-b2306923a/)
 
 ---
 
