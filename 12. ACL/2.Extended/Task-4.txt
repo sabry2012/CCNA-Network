@@ -1,0 +1,13 @@
+# Task 4
+# Commands
+
+In Router 0 :
+
+Router#conf t
+Router(config)#access-list 100 deny ip host 192.168.1.2 host 192.168.5.3
+Router(config)#access-list 100 permit ip any any
+Router(config)#int fa0/0
+Router(config-if)#ip access-group 100 in
+Router(config-if)#exit
+Router(config)#exit
+Router#

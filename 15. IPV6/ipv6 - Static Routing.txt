@@ -1,0 +1,28 @@
+# INTERNET PROTOCOL - VERSION 6 (IPV6)
+# STATIC ROUTING IN IPV6
+# Commands
+
+In Router 0 :
+
+Router(config)#ipv6 unicast-routing
+Router(config)#int fa0/0
+Router(config-if)#ipv6 address 2001:1::1/64
+Router(config-if)#no shutdown
+Router(config-if)#int fa0/1
+Router(config-if)#ipv6 address 2001:2::1/64
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#ipv6 route 2001:3::/64 2001:2::2
+
+
+In Router 1 :
+
+Router(config)#ipv6 unicast-routing
+Router(config)#int fa0/0
+Router(config-if)#ipv6 address 2001:3::1/64
+Router(config-if)#no shutdown
+Router(config-if)#int fa0/1
+Router(config-if)#ipv6 address 2001:2::2/64
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#ipv6 route 2001:1::/64 2001:2::1

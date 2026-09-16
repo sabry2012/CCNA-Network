@@ -1,0 +1,31 @@
+
+Router#conf t
+Router(config)#access-list 1 permit 192.168.1.0 0.0.0.255
+Router(config)#ip nat inside source list 1 interface fa0/0
+Router(config)#int fa0/0
+Router(config-if)#ip nat outside
+Router(config-if)#int fa0/1
+Router(config-if)#ip nat inside
+Router(config-if)#exit
+Router(config)#ip route 70.1.1.0 255.255.255.0 200.1.1.2
+Router(config)#
+
+
+Now accessing Google webpage from SSN College’s 192.168.1.2 PC:
+
+In SRM College Router (Router1) :
+
+Router#conf t
+Router(config)#access-list 1 permit 192.168.1.0 0.0.0.255
+Router(config)#ip nat pool SRM 100.1.1.4 100.1.1.7 netmask 255.255.255.252
+Router(config)#ip nat inside source list 1 pool SRM
+Router(config)#int fa0/0
+Router(config-if)#ip nat outside
+Router(config-if)#int fa0/1
+Router(config-if)#ip nat inside
+Router(config-if)#exit
+Router(config)#ip route 70.1.1.0 255.255.255.0 100.1.1.2
+Router(config)#
+
+
+Now accessing Google webpage from SRM College’s 192.168.1.2 PC:

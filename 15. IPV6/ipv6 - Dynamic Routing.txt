@@ -1,0 +1,77 @@
+# Dynamic Routing in IPV6
+# Commands
+# RIP-NG(Routing Information Protocol – Next Generation)
+
+In Router 0 :
+
+Router(config)#ipv6 router rip NetworkGeek
+Router(config-rtr)#exit
+Router(config)#int fa0/0
+Router(config-if)#ipv6 rip NetworkGeek enable
+Router(config-if)#int fa0/1
+Router(config-if)#ipv6 rip NetworkGeek enable
+Router(config-if)#exit
+
+In Router 1 :
+
+Router(config)#ipv6 router rip NetworkGeek
+Router(config-rtr)#exit
+Router(config)#int fa0/0
+Router(config-if)#ipv6 rip NetworkGeek enable
+Router(config-if)#int fa0/1
+Router(config-if)#ipv6 rip NetworkGeek enable
+Router(config-if)#exit
+
+#### OSPF v3
+
+In Router 0 :
+
+Router(config)#ipv6 router ospf 1
+%OSPFv3-4-NORTRID: OSPFv3 process 1 could not pick a router-id,please configure manually
+Router(config-rtr)#router-id 1.1.1.1
+Router(config-rtr)#exit
+Router(config)#int fa0/0
+Router(config-if)#ipv6 ospf 1 area 0
+Router(config-if)#int fa0/1
+Router(config-if)#ipv6 ospf 1 area 0
+Router(config-if)#
+
+
+In Router 1 :
+
+Router(config)#ipv6 router ospf 1
+%OSPFv3-4-NORTRID: OSPFv3 process 1 could not pick a router-id,please configure manually
+Router(config-rtr)#router-id 2.2.2.2
+Router(config-rtr)#exit
+Router(config)#int fa0/0
+Router(config-if)#ipv6 ospf 1 area 0
+Router(config-if)#int fa0/1
+Router(config-if)#ipv6 ospf 1 area 0
+Router(config-if)#
+
+# EIGRP
+
+In Router 0 :
+
+Router(config)#ipv6 router eigrp 1
+Router(config-rtr)#eigrp router-id 1.1.1.1
+Router(config-rtr)#no shut
+Router(config-rtr)#exit
+Router(config)#int fa0/0
+Router(config-if)#ipv6 eigrp 1
+Router(config-if)#int fa0/1
+Router(config-if)#ipv6 eigrp 1
+Router(config-if)#
+
+
+In Router 1 :
+
+Router(config)#ipv6 router eigrp 1
+Router(config-rtr)#eigrp router-id 2.2.2.2
+Router(config-rtr)#no shut
+Router(config-rtr)#exit
+Router(config)#int fa0/0
+Router(config-if)#ipv6 eigrp 1
+Router(config-if)#int fa0/1
+Router(config-if)#ipv6 eigrp 1
+Router(config-if)#

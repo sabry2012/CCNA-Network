@@ -1,0 +1,15 @@
+Router#
+## TELNET
+
+#Commands
+
+In Router 0 :
+
+Router>en
+Router#conf t
+Enter configuration commands, one per line. End with CNTL/Z.
+Router(config)#enable secret cisco123
+Router(config)#line vty 0 4
+Router(config-line)#password cisco
+Router(config-line)#exit
+Router(config)#

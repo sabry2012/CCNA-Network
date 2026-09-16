@@ -1,0 +1,11 @@
+# Task 4
+# Commands
+
+In Router 1 :
+
+Router(config)#access-list 1 permit host 192.168.2.3
+Router(config)#access-list 1 deny 192.168.2.0 0.0.0.255
+Router(config)#access-list 1 permit any
+Router(config)#int fa0/1
+Router(config-if)#ip access-group 1 out
+Router(config-if)#

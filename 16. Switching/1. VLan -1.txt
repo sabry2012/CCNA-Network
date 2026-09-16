@@ -1,0 +1,27 @@
+# SWITCHING AND VLAN
+# VLAN 1
+# Commands
+
+In Switch 0 :
+
+Switch#conf t
+Switch(config)#vlan 10
+Switch(config-vlan)#name VLAN10
+Switch(config)#vlan 20
+Switch(config-vlan)#name VLAN20
+Switch(config)#vlan 30
+Switch(config-vlan)#name VLAN30
+Switch(config-vlan)#exit
+Switch(config)#int fa0/1
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#int fa0/2
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#int fa0/3
+Switch(config-if)#switchport access vlan 20
+Switch(config-if)#int fa0/4
+Switch(config-if)#switchport access vlan 20
+Switch(config-if)#int fa0/5
+Switch(config-if)#switchport access vlan 30
+Switch(config-if)#int fa0/6
+Switch(config-if)#switchport access vlan 30
+Switch(config-if)#

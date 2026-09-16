@@ -1,0 +1,14 @@
+# EXTENDED ACL
+# Task 1
+# Commands
+
+In Router 0 :
+
+Router>en
+Router#conf t
+Router(config)#access-list 100 deny ip host 192.168.1.2 192.168.2.0 0.0.0.255
+Router(config)#access-list 100 permit ip any any
+Router(config)#int fa0/0
+Router(config-if)#ip access-group 100 in
+Router(config-if)#exit
+Router(config)#

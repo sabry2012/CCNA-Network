@@ -1,0 +1,19 @@
+# Inter-vlan routing
+# Commands
+
+In Switch 0 :
+
+Switch(config)#ip routing
+Switch(config)#int vlan 10
+Switch(config-if)#
+%LINK-5-CHANGED: Interface Vlan10, changed state to up
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan10, changed state to up
+Switch(config-if)#
+Switch(config-if)#ip add 192.168.1.1 255.255.255.0
+Switch(config-if)#int vlan 20
+Switch(config-if)#
+%LINK-5-CHANGED: Interface Vlan20, changed state to up
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan20, changed state to up
+Switch(config-if)#ip add 192.168.2.1 255.255.255.0
+Switch(config-if)#
+

@@ -1,0 +1,17 @@
+# OPEN SHORTEST PATH FIRST (OSPF)
+## OSPF
+### Commands
+
+In Router 0 :
+
+Router(config)#router ospf ?
+<1-65535> Process ID
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.1.0 0.0.0.255 area 0
+Router(config-router)#network 192.168.2.0 0.0.0.255 area 0
+
+In Router 1 :
+
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.2.0 0.0.0.255 area 0
+Router(config-router)#network 192.168.3.0 0.0.0.255 area 0

@@ -1,0 +1,13 @@
+NAT I
+
+In Router 0 :
+
+Router#conf t
+Router(config)#access-list 1 permit 192.168.1.0 0.0.0.255
+Router(config)#ip nat inside source list 1 interface fa0/1
+Router(config)#int fa0/1
+Router(config-if)#ip nat outside
+Router(config-if)#int fa0/0
+Router(config-if)#ip nat inside
+Router(config-if)#
+Router#

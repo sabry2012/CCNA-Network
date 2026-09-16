@@ -1,0 +1,16 @@
+# VLAN 2
+# Commands
+
+In Switch 0 :
+
+Switch#conf t
+Switch(config)#interface fa0/7
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#
+
+In Switch 1 :
+
+Switch#conf t
+Switch(config)#interface fa0/4
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#

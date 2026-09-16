@@ -1,0 +1,18 @@
+
+# EIGRP AUTO SUMMARY
+# Commands
+
+In Router 0 :
+
+Router#conf t
+Router(config)#router eigrp 1
+Router(config-router)#network 192.168.0.0 0.0.255.255
+Router(config-router)#
+
+In Router 1 :
+
+Router#conf t
+Router(config)#router eigrp 1
+Router(config-router)#network 192.168.2.0 0.0.0.255
+Router(config-router)#network 10.1.1.0 0.0.0.255
+Router(config-router)#no auto-summary

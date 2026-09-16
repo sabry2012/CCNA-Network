@@ -1,0 +1,11 @@
+# Task 2
+# Commands
+
+In Router 1 :
+
+Router#conf t
+Router(config)#access-list 1 deny host 192.168.1.2
+Router(config)#access-list 1 permit any
+Router(config)#int fa0/0
+Router(config-if)#ip access-group 1 out
+Router(config-if)#

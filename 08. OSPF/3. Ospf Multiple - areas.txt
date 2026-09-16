@@ -1,0 +1,24 @@
+## OSPF between 4 Routers
+### Commands
+
+In Router 0 :
+
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.0.0 0.0.255.255 area 0
+
+In Router 1 :
+
+
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.0.0 0.0.255.255 area 0
+
+
+In Router 2 :
+
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.0.0 0.0.255.255 area 0
+
+In Router 3 :
+
+Router(config)#router ospf 1
+Router(config-router)#network 192.168.0.0 0.0.255.255 area 0

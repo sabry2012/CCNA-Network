@@ -1,0 +1,19 @@
+
+## RIP LOAD BALANCING
+
+### Commands
+
+Checking the routing table of Router 3 
+
+Router#show ip route
+Gateway of last resort is not set
+C 192.168.1.024 is directly connected, FastEthernet10
+R 192.168.2.024 [1202] via 192.168.3.2, 000004, FastEthernet00
+[1202] via 192.168.4.2, 000025, FastEthernet01
+C 192.168.3.024 is directly connected, FastEthernet00
+C 192.168.4.024 is directly connected, FastEthernet01
+R 192.168.5.024 [1201] via 192.168.3.2, 000004, FastEthernet00
+R 192.168.6.024 [1201] via 192.168.4.2, 000025, Fast Ethernet01
+Router#
+
+Tracing the path from 192.168.1.2 to 192.168.2.2

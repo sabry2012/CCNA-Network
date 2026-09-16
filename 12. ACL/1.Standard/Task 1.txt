@@ -1,0 +1,17 @@
+# ACCESS CONTROL LIST (ACL)
+# STANDARD ACL
+# Task 1
+# Commands
+In Router 0 :
+
+Router#conf t
+Router(config)#access-list 1 deny host 192.168.1.2
+Router(config)#access-list 1 permit any
+Router(config)#int fa0/1
+Router(config-if)#ip access-group 1 out
+Router(config-if)#exit
+Router(config)#do show access-list
+Standard IP access list 1
+deny host 192.168.1.2
+permit any
+Router(config)#
