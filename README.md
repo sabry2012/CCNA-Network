@@ -6,6 +6,20 @@
 [![GitHub stars](https://img.shields.io/github/stars/sabry2012/CCNA-Network?style=social)](https://github.com/sabry2012/CCNA-Network)
 
 A practical CCNA networking study repository containing concepts, Cisco commands, configurations, troubleshooting notes, and Packet Tracer labs.
+### 🧰 Technologies & Tools
+
+- Cisco IOS
+- Cisco Packet Tracer
+- Routing & Switching
+- TCP/IP
+- IPv4 & IPv6
+- VLANs & STP
+- OSPF, EIGRP & RIP
+- ACL & NAT
+- DHCP & DNS
+- FHRP / HSRP
+- Network Troubleshooting
+
 ## 📚 Table of Contents
 
 | # | Topic |
