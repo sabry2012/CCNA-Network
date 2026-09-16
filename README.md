@@ -1,7 +1,11 @@
 # CCNA-Network
 
-A practical CCNA networking study repository containing concepts, Cisco commands, configurations, troubleshooting notes, and Packet Tracer labs.
+[![CCNA](https://img.shields.io/badge/CCNA-Networking-blue)](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html)
+[![Cisco](https://img.shields.io/badge/Cisco-IOS-1BA0D7)](https://www.cisco.com/)
+[![Packet Tracer](https://img.shields.io/badge/Cisco-Packet%20Tracer-orange)](https://www.netacad.com/cisco-packet-tracer)
+[![GitHub stars](https://img.shields.io/github/stars/sabry2012/CCNA-Network?style=social)](https://github.com/sabry2012/CCNA-Network)
 
+A practical CCNA networking study repository containing concepts, Cisco commands, configurations, troubleshooting notes, and Packet Tracer labs.
 ## 📚 Table of Contents
 
 | # | Topic |
